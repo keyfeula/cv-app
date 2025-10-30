@@ -1,3 +1,10 @@
 .cv-control {
     border: 2px solid mediumpurple;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+p {
+    border: 1px solid black;
 }
