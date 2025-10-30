@@ -1,5 +1,6 @@
-import { useState } from "react"
-import "../styles/CVControl.css"
+import { useState } from "react";
+import { Form } from "./Form";
+import "../styles/CVControl.css";
 
 export function CVControl(props) {
     const [open, setOpen] = useState(false);
@@ -15,11 +16,11 @@ export function CVControl(props) {
 
     return (
         <div>
-            <div className="cv-control">
+            <div className={`cv-control ${open ? "open" : "closed"}`}>
                 <h2>{props.name}</h2>
                 <button onClick={handleButtonClick}>{open ? "Close" : "Open"}</button>
             </div>
-            <div>{open ? <p>Open</p> : null}</div>
+            {open ? <Form /> : null}
         </div>
     )
 }

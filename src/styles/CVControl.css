@@ -1,10 +1,13 @@
 .cv-control {
-    border: 2px solid mediumpurple;
+    border: 2px solid black;
+    background: var(--main-color);
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
 }
 
-p {
-    border: 1px solid black;
+.cv-control.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
