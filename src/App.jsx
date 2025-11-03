@@ -11,7 +11,7 @@ function App() {
       <section className="controls">
         <GeneralInfo />
       </section>
-      <section className="cv-display">
+      <section className="display">
         Display
       </section>
     </>

@@ -5,5 +5,12 @@
 }
 
 .controls {
-  padding: 2rem;
+  padding: min(8%, 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.display {
+  padding: min(8%, 4rem);
 }
