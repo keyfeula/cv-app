@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { CVControl } from "./components/CVControl";
-import { CVDisplay } from "./components/CVDisplay";
+
 
 function App() {
   const [count, setCount] = useState(0);
