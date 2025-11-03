@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GeneralInfo } from "./components/GeneralInfo";
 import "./App.css";
 
 
@@ -7,16 +8,12 @@ function App() {
 
   return (
     <>
-      <main>
-        <section className="controls">
-          <CVControl name="General Information"/>
-          <CVControl name="Education"/>
-          <CVControl name="Experience"/>
-        </section>
-        <section className="cv-display">
-          <CVDisplay />
-        </section>
-      </main>
+      <section className="controls">
+        <GeneralInfo />
+      </section>
+      <section className="cv-display">
+        Display
+      </section>
     </>
   )
 }
