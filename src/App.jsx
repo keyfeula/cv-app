@@ -1,18 +1,22 @@
 import { useState } from "react";
 import { GeneralInfo } from "./components/GeneralInfo";
+import { EducationInfo } from "./components/EducationInfo";
+import { WorkExperience } from "./components/WorkExperience";
+import { Resume } from "./components/Resume";
 import "./App.css";
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
       <section className="controls">
         <GeneralInfo />
+        <EducationInfo />
+        <WorkExperience />
       </section>
       <section className="display">
-        Display
+        <Resume />
       </section>
     </>
   )
