@@ -1,3 +1,7 @@
 .resume {
     border: 2px solid black;
 }
+
+.resume header {
+    background-color: blue;
+}
