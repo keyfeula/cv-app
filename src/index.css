@@ -4,20 +4,22 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --main-color: #1e1e1e;
-  --button-color: #aaaaaa;
+  --bg-color: #343a40;
+  --bg-color-2: #dee2e6;
+  --dark-color: #6c757d;
+  --font-color: black;
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
+  background-color: var(--bg-color);
 }
 
 div#root {
@@ -38,25 +40,6 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--button-color);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {

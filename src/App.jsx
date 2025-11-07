@@ -16,7 +16,7 @@ function App() {
         <WorkExperience />
       </section>
       <section className="display">
-        <Resume />
+        
       </section>
     </>
   )
