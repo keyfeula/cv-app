@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Form } from "./Form.jsx";
-import "../styles/GeneralInfo.css";
+import "../styles/FormControl.css";
 
-export function GeneralInfo(props) {
+export function FormControl({type, sendData}) {
 
     const [open, setOpen] = useState(false);
 
@@ -11,12 +11,12 @@ export function GeneralInfo(props) {
     }
 
     return (
-        <div className="general-info">
+        <div className="form-control">
             <header>
-                <h2>General Information</h2>
+                <h2>{type}</h2>
                 <button onClick={clickHandler}>{open ? "Close" : "Open"}</button>
             </header>
-            <Form type="general" isOpen={open}/>
+            <Form type={type} isOpen={open} sendData={sendData}/>
         </div>
     );
 }

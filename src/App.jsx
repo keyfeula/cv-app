@@ -1,22 +1,28 @@
 import { useState } from "react";
-import { GeneralInfo } from "./components/GeneralInfo";
-import { EducationInfo } from "./components/EducationInfo";
-import { WorkExperience } from "./components/WorkExperience";
-import { Resume } from "./components/Resume";
+import { FormControl } from "./components/FormControl.jsx";
+import { Resume } from "./components/Resume.jsx";
 import "./App.css";
 
 
 function App() {
 
+  const [generalData, setGeneralData] = useState({});
+  const [educationData, setEducationData] = useState({});
+  const [workData, setWorkData] = useState({});
+
   return (
     <>
       <section className="controls">
-        <GeneralInfo />
-        <EducationInfo />
-        <WorkExperience />
+        <FormControl type="General Information" sendData={setGeneralData}/>
+        <FormControl type="Education" sendData={setEducationData} />
+        <FormControl type="Work Experience" sendData={setWorkData} />
       </section>
       <section className="display">
-        
+        <Resume 
+          generalData={generalData}
+          educationData={educationData}
+          workData={workData}
+        />
       </section>
     </>
   )

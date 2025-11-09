@@ -1,7 +1,7 @@
-.general-info {
+.form-control {
     background-color: var(--bg-color-2);
-    border: 2px solid black;
     max-width: 450px;
+    border-radius: 5px;
 }
 
 header {

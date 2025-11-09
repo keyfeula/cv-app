@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/Form.css";
 
-export function Form({type, isOpen}) {
+export function Form({type, isOpen, sendData}) {
 
     const [generalData, setGeneralData] = useState({
         userName: "",
@@ -39,7 +39,21 @@ export function Form({type, isOpen}) {
         }
     }
 
-    if (type === "general") {
+    function submitBtnHandler(event) {
+        event.prevent
+        const id = event.target.id;
+        if (id === "general") {
+            sendData(generalData);
+        }
+        else if (id === "education") {
+            sendData(educationData);
+        }
+        else {
+            sendData(workData);
+        }
+    }
+
+    if (type === "General Information") {
         return (
             <form action="">
                 <div className="form-field">
@@ -69,10 +83,15 @@ export function Form({type, isOpen}) {
                         onChange={inputOnChange}    
                     />
                 </div>
+                <button 
+                    type="button" 
+                    id="general" 
+                    onClick={submitBtnHandler}>Submit
+                </button>
             </form>
         )
     }
-    else if (type === "education") {
+    else if (type === "Education") {
         return (
             <form action="">
                 <div className="form-field">
@@ -102,10 +121,15 @@ export function Form({type, isOpen}) {
                         onChange={inputOnChange}    
                     />
                 </div>
+                <button 
+                    type="button"
+                    id="education" 
+                    onClick={submitBtnHandler}>Submit
+                 </button>
             </form>
         )
     }
-    else if (type === "work"){
+    else if (type === "Work Experience"){
         return (
             <form action="">
                 <div className="form-field">
@@ -153,6 +177,11 @@ export function Form({type, isOpen}) {
                         onChange={inputOnChange}
                     />
                 </div>
+                <button 
+                    type="button" 
+                    id="experience" 
+                    onClick={submitBtnHandler}>Submit
+                </button>
             </form>
         )
     }

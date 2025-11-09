@@ -5,24 +5,23 @@
 }
 
 .controls {
-  padding: min(8%, 4rem);
+  padding: min(3%, 4rem);
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .display {
-  padding: min(8%, 4rem);
+  padding: min(3%, 4rem);
 }
 
 button {
   border-radius: 8px;
-  border: 2px solid black;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.6rem 1.2rem;
   font-weight: 500;
   font-family: inherit;
   color: black;
-  background-color: var(--dark-color);
+  background-color: var(--btn-color);
   cursor: pointer;
+  border: none;
 }

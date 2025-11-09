@@ -1,7 +1,31 @@
 .resume {
     border: 2px solid black;
+    background-color: white;
 }
 
-.resume header {
-    background-color: blue;
+.general {
+    background-color: var(--btn-color);
+    padding: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.experience {
+    padding: 1rem;
+}
+
+.education {
+    padding: 1rem;
+}
+
+.educationHeading {
+    border-bottom: 2px solid black;
+}
+
+.schoolHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceHeading {
+    border-bottom: 2px solid black;
 }

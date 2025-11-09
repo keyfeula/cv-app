@@ -11,9 +11,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-color: #343a40;
+  --bg-color: #363636;
   --bg-color-2: #dee2e6;
-  --dark-color: #6c757d;
+  --btn-color: #1357cc;
+  --btn-color-hover: #aaaaaa;
   --font-color: black;
 }
 
