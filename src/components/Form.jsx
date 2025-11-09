@@ -152,8 +152,8 @@ export function Form({type, isOpen, sendData}) {
                 </div>
                 <div className="form-field">
                     <label htmlFor="responsibilities">Responsibilities</label>
-                    <input 
-                        type="text"
+                    <textarea 
+                        rows="5"
                         id="responsibilities"
                         value={workData.responsibilities}
                         onChange={inputOnChange}

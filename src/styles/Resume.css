@@ -29,3 +29,14 @@
 .experienceHeading {
     border-bottom: 2px solid black;
 }
+
+.experience .firstRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateInfo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

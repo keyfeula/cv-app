@@ -18,10 +18,23 @@ form {
 input {
     background-color: var(--bg-color-2);
     color: black;
-    color-scheme: dark;
     border: 2px solid black;
+    font-family: inherit;
+    border-radius: 5px;
 }
 
 input:focus {
+    outline: none;
+}
+
+textarea {
+    background: var(--bg-color-2);
+    border: 2px solid black;
+    color: black;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+textarea:focus {
     outline: none;
 }
