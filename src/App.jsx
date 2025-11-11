@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <section className="controls">
-        <FormControl type="General Information" sendData={setGeneralData}/>
+        <FormControl type="General Info" sendData={setGeneralData}/>
         <FormControl type="Education" sendData={setEducationData} />
         <FormControl type="Work Experience" sendData={setWorkData} />
       </section>

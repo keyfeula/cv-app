@@ -21,6 +21,7 @@ input {
     border: 2px solid black;
     font-family: inherit;
     border-radius: 5px;
+    padding: 2px 4px;
 }
 
 input:focus {
@@ -33,6 +34,7 @@ textarea {
     color: black;
     font-family: inherit;
     border-radius: 5px;
+    padding: 2px 4px;
 }
 
 textarea:focus {

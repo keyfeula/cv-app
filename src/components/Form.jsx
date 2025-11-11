@@ -40,7 +40,7 @@ export function Form({type, isOpen, sendData}) {
     }
 
     function submitBtnHandler(event) {
-        event.prevent
+        event.preventDefault();
         const id = event.target.id;
         if (id === "general") {
             sendData(generalData);
@@ -53,7 +53,7 @@ export function Form({type, isOpen, sendData}) {
         }
     }
 
-    if (type === "General Information") {
+    if (type === "General Info") {
         return (
             <form action="">
                 <div className="form-field">
@@ -84,7 +84,7 @@ export function Form({type, isOpen, sendData}) {
                     />
                 </div>
                 <button 
-                    type="button" 
+                    type="button"
                     id="general" 
                     onClick={submitBtnHandler}>Submit
                 </button>
@@ -125,7 +125,7 @@ export function Form({type, isOpen, sendData}) {
                     type="button"
                     id="education" 
                     onClick={submitBtnHandler}>Submit
-                 </button>
+                </button>
             </form>
         )
     }
@@ -178,8 +178,8 @@ export function Form({type, isOpen, sendData}) {
                     />
                 </div>
                 <button 
-                    type="button" 
-                    id="experience" 
+                    type="button"
+                    id="education" 
                     onClick={submitBtnHandler}>Submit
                 </button>
             </form>

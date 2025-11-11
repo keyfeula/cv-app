@@ -1,8 +1,9 @@
 .form-control {
     background-color: var(--bg-color-2);
-    max-width: 450px;
     border-radius: 5px;
+    width: max(20rem, 80%);
     border: 2px solid black;
+    box-shadow: 2px 3px 8px #00000099;
 }
 
 header {
