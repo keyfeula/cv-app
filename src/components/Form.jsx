@@ -53,6 +53,37 @@ export function Form({type, isOpen, sendData}) {
         }
     }
 
+    function clearBtnHandler(event) {
+        event.preventDefault();
+        const id = event.target.id;
+        if (id === "clear-general") {
+            setGeneralData(
+            {
+                userName: "",
+                email: "",
+                phone: ""
+            });
+        }
+        else if (id === "clear-education") {
+            setEducationData(
+            {
+                schoolName: "",
+                fieldOfStudy: "",
+                graduationDate: ""
+            });
+        }
+        else {
+            setWorkData(
+            {
+                companyName: "",
+                title: "",
+                responsibilities: "",
+                startDate: "",
+                endDate: ""
+            });
+        }
+    }
+
     if (type === "General Info") {
         return (
             <form action="">
@@ -83,11 +114,19 @@ export function Form({type, isOpen, sendData}) {
                         onChange={inputOnChange}    
                     />
                 </div>
-                <button 
-                    type="button"
-                    id="general" 
-                    onClick={submitBtnHandler}>Submit
-                </button>
+                <div className="buttons-container">
+                    <button
+                        type="button"
+                        id="general"
+                        onClick={submitBtnHandler}>Submit
+                    </button>
+                    <button
+                        className="clear-btn"
+                        id="clear-general" 
+                        type="button"
+                        onClick={clearBtnHandler}>Clear
+                    </button>
+                </div>
             </form>
         )
     }
@@ -121,15 +160,23 @@ export function Form({type, isOpen, sendData}) {
                         onChange={inputOnChange}    
                     />
                 </div>
-                <button 
-                    type="button"
-                    id="education" 
-                    onClick={submitBtnHandler}>Submit
-                </button>
+                <div className="buttons-container">
+                    <button
+                        type="button"
+                        id="education"
+                        onClick={submitBtnHandler}>Submit
+                    </button>
+                    <button
+                        className="clear-btn"
+                        id="clear-education"
+                        type="button"
+                        onClick={clearBtnHandler}>Clear
+                    </button>
+                </div>
             </form>
         )
     }
-    else if (type === "Work Experience"){
+    else if (type === "Experience"){
         return (
             <form action="">
                 <div className="form-field">
@@ -177,11 +224,19 @@ export function Form({type, isOpen, sendData}) {
                         onChange={inputOnChange}
                     />
                 </div>
-                <button 
-                    type="button"
-                    id="education" 
-                    onClick={submitBtnHandler}>Submit
-                </button>
+                <div className="buttons-container">
+                    <button
+                        type="button"
+                        id="experience"
+                        onClick={submitBtnHandler}>Submit
+                    </button>
+                    <button
+                        className="clear-btn"
+                        id="clear-experience" 
+                        type="button"
+                        onClick={clearBtnHandler}>Clear
+                    </button>
+                </div>
             </form>
         )
     }

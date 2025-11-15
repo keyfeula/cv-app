@@ -15,7 +15,7 @@ function App() {
       <section className="controls">
         <FormControl type="General Info" sendData={setGeneralData}/>
         <FormControl type="Education" sendData={setEducationData} />
-        <FormControl type="Work Experience" sendData={setWorkData} />
+        <FormControl type="Experience" sendData={setWorkData} />
       </section>
       <section className="display">
         <Resume 

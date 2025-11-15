@@ -40,3 +40,17 @@ textarea {
 textarea:focus {
     outline: none;
 }
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button.clear-btn {
+    background-color: var(--clear-btn-color);
+}
+
+button.clear-btn:hover {
+    background-color: var(--clear-btn-hover);
+}
