@@ -1,9 +1,15 @@
 .form-control {
     background-color: var(--bg-color-2);
-    border-radius: 5px;
+    border-radius: 8px;
     width: max(20rem, 80%);
-    border: 2px solid black;
-    box-shadow: 2px 3px 8px #00000099;
+    box-shadow: 5px 8px 15px #00000055;
+    border: 1px solid transparent;
+}
+
+.form-control:hover {
+    animation-name: shake;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in-out;
 }
 
 header {
@@ -12,4 +18,19 @@ header {
     align-items: center;
     padding: 1rem;
     gap: 1rem;
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }

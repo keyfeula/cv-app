@@ -3,7 +3,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border-top: 2px solid black;
+    border-top: 1.5px solid black;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -18,7 +18,7 @@ form {
 input {
     background-color: var(--bg-color-2);
     color: black;
-    border: 2px solid black;
+    border: 1.5px solid black;
     font-family: inherit;
     border-radius: 5px;
     padding: 2px 4px;
@@ -30,7 +30,7 @@ input:focus {
 
 textarea {
     background: var(--bg-color-2);
-    border: 2px solid black;
+    border: 1.5px solid black;
     color: black;
     font-family: inherit;
     border-radius: 5px;

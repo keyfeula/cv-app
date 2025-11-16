@@ -12,11 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
 
   --bg-color: #363636;
-  --bg-color-2: #dee2e6;
-  --btn-color: #1357cc;
-  --btn-color-hover: #0b47b0;
-  --clear-btn-color: #db2a2a;
-  --clear-btn-hover: #b12121;
+  --bg-color-2: #ffffff;
+  --btn-color: #a1a1a1;
+  --btn-color-hover: #838383;
+  --clear-btn-color: #c93131;
+  --clear-btn-hover: #ad2929;
   --font-color: black;
 }
 
