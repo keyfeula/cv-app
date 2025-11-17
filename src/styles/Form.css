@@ -25,7 +25,8 @@ input {
 }
 
 input:focus {
-    outline: none;
+    outline: 1.5px solid #2454da;
+    border: 1.5px solid transparent;
 }
 
 textarea {
